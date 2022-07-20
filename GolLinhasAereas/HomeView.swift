@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    var link: String = "https://www.voegol.com.br"
     var body: some View {
         ZStack(alignment: .leading) {
             
@@ -56,18 +58,26 @@ struct HomeView: View {
                 }
                 .frame(width: 360, height: 150, alignment: .leading)
                 
-                
-                Button {
-                    print("clicou!")
-                } label: {
+                Link(destination: URL(string: link)!) {
                     Text("Fique por dentro")
                         .frame(width: 275, height: 50, alignment: .center)
                         .foregroundColor(.black)
                         .font(.system(size: 18, weight: .bold, design: .default))
                         .background(.orange)
                         .cornerRadius(10)
-                    
                 }
+                
+//                Button {
+//                    print("clicou!")
+//                } label: {
+//                    Text("Fique por dentro")
+//                        .frame(width: 275, height: 50, alignment: .center)
+//                        .foregroundColor(.black)
+//                        .font(.system(size: 18, weight: .bold, design: .default))
+//                        .background(.orange)
+//                        .cornerRadius(10)
+//
+//                }
                 
             } // ScrollView
        
