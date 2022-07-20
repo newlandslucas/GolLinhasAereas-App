@@ -17,6 +17,7 @@ struct Card: View {
             print("Clicou!")
         } label: {
             VStack(alignment: .leading, spacing: 5) {
+                
                 Image(systemName: image)
                     .foregroundColor(.orange)
                     .font(.system(size: 20))
@@ -25,6 +26,7 @@ struct Card: View {
                     Text(text1)
                         .foregroundColor(.black)
                         .font(.system(size: 15, weight: .medium, design: .serif))
+                        
                     
                     Text(text2)
                         .foregroundColor(.black)
@@ -32,12 +34,14 @@ struct Card: View {
                 }
                 
             }
+            .frame(width: 90, height: 85, alignment: .leading)
+            
+            .padding(.horizontal, 10)
+            .background(.white)
+            
+            
         }
-        .cornerRadius(10)
-        .background(.white)
-        .padding()
-        .frame(width: 125, height: 85, alignment: .leading)
-
+        .cornerRadius(15)
     }
 }
 

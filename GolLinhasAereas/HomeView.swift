@@ -10,14 +10,19 @@ import SwiftUI
 struct HomeView: View {
     
     var link: String = "https://www.voegol.com.br"
+    var contentCards: [Card] = [
+    Card(image: "airplane", text1: "Teste", text2: "Teste")
+    ]
+    var columnGrid: [GridItem] = [GridItem(.flexible(), spacing: 5), GridItem(.flexible() , spacing: 5), GridItem(.flexible() , spacing: 5)]
+    
     var body: some View {
-        ZStack(alignment: .leading) {
+        VStack(alignment: .leading) {
             
             ScrollView(.vertical, showsIndicators: false) {
-                HStack() {
+                HStack(spacing: 25) {
                     Image("LogoTexto.png")
                         .resizable()
-                    .frame(width: 75, height: 50)
+                    .frame(width: 65, height: 40)
                     
                 
                     Spacer()
@@ -66,25 +71,29 @@ struct HomeView: View {
                         .background(.orange)
                         .cornerRadius(10)
                 }
-                
-//                Button {
-//                    print("clicou!")
-//                } label: {
-//                    Text("Fique por dentro")
-//                        .frame(width: 275, height: 50, alignment: .center)
-//                        .foregroundColor(.black)
-//                        .font(.system(size: 18, weight: .bold, design: .default))
-//                        .background(.orange)
-//                        .cornerRadius(10)
-//
-//                }
-                
+                Spacer()
             } // ScrollView
-       
-            .padding()
             
-            Spacer()
+            
+            VStack(alignment: .center) {
+                HStack(spacing: 10) {
+                    Card(image: "magnifyingglass", text1: "Encontrar", text2: "viagem")
+                    Card(image: "airplane.departure", text1: "Fazer", text2: "check-in")
+                    Card(image: "ticket.fill", text1: "Comprar", text2: "viagem")
+                }
+                
+                HStack {
+                    Card(image: "airplane", text1: "Encontrar", text2: "viagem")
+                    Card(image: "clock.fill", text1: "Status de", text2: "voo")
+                    Card(image: "figure.walk", text1: "Voe Junto", text2: "")
+                }
+            }
+            
         }
+        
+        
+        .padding()
+        .background(Color("ColorBackground"))
     }
 }
 
