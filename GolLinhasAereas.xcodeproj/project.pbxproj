@@ -14,6 +14,7 @@
 		94D694952888625C00093D0F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D694942888625C00093D0F /* HomeView.swift */; };
 		94D69497288880D900093D0F /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69496288880D900093D0F /* ModalView.swift */; };
 		94D6949A2888816F00093D0F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D694992888816F00093D0F /* Card.swift */; };
+		94D6949D2889BECF00093D0F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6949C2889BECF00093D0F /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		94D694942888625C00093D0F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		94D69496288880D900093D0F /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		94D694992888816F00093D0F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		94D6949C2889BECF00093D0F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +59,10 @@
 		94D6948528884C6F00093D0F /* GolLinhasAereas */ = {
 			isa = PBXGroup;
 			children = (
+				94D6949B2889BEBB00093D0F /* Screens */,
 				94D694982888816800093D0F /* components */,
 				94D6948628884C6F00093D0F /* GolLinhasAereasApp.swift */,
 				94D6948828884C6F00093D0F /* ContentView.swift */,
-				94D694942888625C00093D0F /* HomeView.swift */,
 				94D69496288880D900093D0F /* ModalView.swift */,
 				94D6948A28884C7100093D0F /* Assets.xcassets */,
 				94D6948C28884C7100093D0F /* Preview Content */,
@@ -82,6 +84,15 @@
 				94D694992888816F00093D0F /* Card.swift */,
 			);
 			path = components;
+			sourceTree = "<group>";
+		};
+		94D6949B2889BEBB00093D0F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				94D694942888625C00093D0F /* HomeView.swift */,
+				94D6949C2889BECF00093D0F /* ProfileView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +169,7 @@
 				94D6948928884C6F00093D0F /* ContentView.swift in Sources */,
 				94D6949A2888816F00093D0F /* Card.swift in Sources */,
 				94D69497288880D900093D0F /* ModalView.swift in Sources */,
+				94D6949D2889BECF00093D0F /* ProfileView.swift in Sources */,
 				94D6948728884C6F00093D0F /* GolLinhasAereasApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

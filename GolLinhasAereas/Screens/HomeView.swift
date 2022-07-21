@@ -68,7 +68,7 @@ struct HomeView: View {
                         .frame(width: 275, height: 50, alignment: .center)
                         .foregroundColor(.black)
                         .font(.system(size: 18, weight: .bold, design: .default))
-                        .background(.orange)
+                        .background(Color("OrangeColor"))
                         .cornerRadius(10)
                 }
                 Spacer()
