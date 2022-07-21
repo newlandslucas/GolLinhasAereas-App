@@ -15,6 +15,7 @@
 		94D69497288880D900093D0F /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D69496288880D900093D0F /* ModalView.swift */; };
 		94D6949A2888816F00093D0F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D694992888816F00093D0F /* Card.swift */; };
 		94D6949D2889BECF00093D0F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6949C2889BECF00093D0F /* ProfileView.swift */; };
+		94D6949F2889D28000093D0F /* ProfileView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6949E2889D28000093D0F /* ProfileView1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		94D69496288880D900093D0F /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		94D694992888816F00093D0F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		94D6949C2889BECF00093D0F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		94D6949E2889D28000093D0F /* ProfileView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				94D694942888625C00093D0F /* HomeView.swift */,
 				94D6949C2889BECF00093D0F /* ProfileView.swift */,
+				94D6949E2889D28000093D0F /* ProfileView1.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				94D694952888625C00093D0F /* HomeView.swift in Sources */,
 				94D6948928884C6F00093D0F /* ContentView.swift in Sources */,
+				94D6949F2889D28000093D0F /* ProfileView1.swift in Sources */,
 				94D6949A2888816F00093D0F /* Card.swift in Sources */,
 				94D69497288880D900093D0F /* ModalView.swift in Sources */,
 				94D6949D2889BECF00093D0F /* ProfileView.swift in Sources */,
