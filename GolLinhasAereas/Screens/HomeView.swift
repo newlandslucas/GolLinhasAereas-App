@@ -10,6 +10,9 @@ import SwiftUI
 struct HomeView: View {
     
     var link: String = "https://www.voegol.com.br"
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
+
     @State var isActive: Bool = false
     
     var body: some View {
@@ -26,21 +29,18 @@ struct HomeView: View {
                         Spacer()
                         
                         HStack(spacing: 20) {
-                            
-                            NavigationLink(destination: ProfileView(), isActive: $isActive) {
-                                Button {
-                                    isActive = true
-                                } label: {
-                                    Text("Minha conta")
-                                        .foregroundColor(.black)
-                                        .font(.system(size: 15, weight: .semibold, design: .rounded))
-                                }
-
-                            }.isDetailLink(false)
-                            
-                            Button {
-                                print("Clicou!")
+                        
+                            NavigationLink {
+                                ProfileView()
                             } label: {
+                                Text("Minha conta")
+                                    .foregroundColor(.black)
+                                    .font(.system(size: 15, weight: .semibold, design: .rounded))
+                            }
+                            
+                            NavigationLink {
+                                HelpView()
+                            } label : {
                                 Text("Ajuda")
                                     .foregroundColor(.black)
                                     .font(.system(size: 15, weight: .semibold, design: .rounded))
@@ -97,6 +97,7 @@ struct HomeView: View {
             .navigationBarTitle("")
             .navigationBarHidden(true)
         }
+        .navigationBarBackButtonHidden(true)
         
        
     }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     @State var isActive: Bool = false
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
         NavigationView {
@@ -16,36 +17,25 @@ struct ProfileView: View {
                 VStack(alignment: .leading) {
                     
                     HStack(spacing: 2) {
-                        Text("Lucas Silveira Newlands Machado")
-                            .font(.system(size: 18, weight: .bold, design: .default))
+                        Text("Lucas Silveira\nNewlands Machado")
+                            .font(.system(size: 20, weight: .bold, design: .default))
                             .foregroundColor(.white)
                         
                         Spacer()
                         
-                        Button(action: {
-                            isActive = true
-                            if isActive {
-                                NavigationLink(
-                                    destination: HomeView(),
-                                    label: {
-                                        Text("Navega")
-                                    })
+                        NavigationLink(destination: HomeView(), isActive: $isActive) {
+                            Button {
+                                self.presentationMode.wrappedValue.dismiss()
+                            } label: {
+                                Image(systemName: "house.fill")
+                                    .foregroundColor(.white)
+                                    .background(Color("OrangeColor"))
+                                    .font(.system(size: 30))
+                                    .frame(width: 45, height: 45, alignment: .center)
+                                                              .cornerRadius(25)
                             }
-                        }, label: {
-                            Text("Foda se")
-                        })
-                        
-//                        Button {
-//                            NavigationLink(destination: HomeView(),
-//                                           isActive: $isActive)
-//                        }, label: {
-//                            Image(systemName: "house.fill")
-//                                .foregroundColor(.white)
-//                                .background(Color("OrangeColor"))
-//                                .font(.system(size: 30))
-//                                .frame(width: 45, height: 45, alignment: .center)
-//                                .cornerRadius(25)
-//                        }
+
+                        }
                     }
                     .frame(width: .infinity, height: 85)
                    
