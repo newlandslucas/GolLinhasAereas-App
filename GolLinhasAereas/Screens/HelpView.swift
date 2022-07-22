@@ -8,37 +8,36 @@
 import SwiftUI
 
 struct HelpView: View {
-    @State var isActive: Bool = false
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 
     
     var body: some View {
-        NavigationView {
-         
-            ZStack {
-                VStack(alignment: .leading) {
-                    
-                    HStack() {
-                        Text("Ajuda")
-                        
-                        Spacer()
-                        
-                        Button {
-                            self.presentationMode.wrappedValue.dismiss()
-                        } label: {
-                            Text("Voltar")
-                        }
-                    }
-                    .padding()
-                    
-                    Spacer()
-                }
+        
+        VStack {
+            
+            HStack {
+                Text("Ajuda")
+                
                 Spacer()
-                .frame(width: .infinity, height: 85)
+                
+                Text("Botão voltar")
             }
+            
+            Spacer()
+            
+            Text("Fale conosco em qualquer\num dos meios abaixo")
+                .font(.title)
+                .fontWeight(.semibold)
+            
+            VStack {
+                
+            }
+            
+            Spacer()
         }
-        .navigationTitle("")
-        .navigationBarHidden(true)
+        .padding()
+        .frame(width: .infinity, height: .infinity)
+        .background(Color("ColorBackground"))
     }
 }
 
