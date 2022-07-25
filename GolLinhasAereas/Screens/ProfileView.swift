@@ -12,7 +12,6 @@ struct ProfileView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
-        NavigationView {
             ZStack {
                 VStack(alignment: .leading) {
                     
@@ -23,19 +22,17 @@ struct ProfileView: View {
                         
                         Spacer()
                         
-                        NavigationLink(destination: HomeView(), isActive: $isActive) {
-                            Button {
-                                self.presentationMode.wrappedValue.dismiss()
-                            } label: {
-                                Image(systemName: "house.fill")
-                                    .foregroundColor(.white)
-                                    .background(Color("OrangeColor"))
-                                    .font(.system(size: 30))
-                                    .frame(width: 45, height: 45, alignment: .center)
-                                                              .cornerRadius(25)
-                            }
-
+                        Button {
+                            self.presentationMode.wrappedValue.dismiss()
+                        } label: {
+                            Image(systemName: "house.fill")
+                                .foregroundColor(.white)
+                                .background(Color("OrangeColor"))
+                                .font(.system(size: 30))
+                                .frame(width: 45, height: 45, alignment: .center)
+                                .cornerRadius(25)
                         }
+
                     }
                     .frame(width: .infinity, height: 85)
                    
@@ -96,14 +93,9 @@ struct ProfileView: View {
          
         }
             .background(Color("OrangeColor"))
-            .navigationBarTitle("")
+            .navigationBarBackButtonHidden(true)
+            .navigationTitle("")
             .navigationBarHidden(true)
-            
-          
-         
-            
-        }
-        .navigationBarBackButtonHidden(false)
 
     }
 }

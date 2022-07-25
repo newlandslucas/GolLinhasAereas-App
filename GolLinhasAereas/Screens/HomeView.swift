@@ -79,8 +79,63 @@ struct HomeView: View {
                 
                 VStack(alignment: .center) {
                     HStack(spacing: 10) {
-                        Card(image: "magnifyingglass", text1: "Encontrar", text2: "viagem")
-                        Card(image: "airplane.departure", text1: "Fazer", text2: "check-in")
+                       
+                        NavigationLink {
+                            FindTripView()
+                        } label : {
+                            VStack(alignment: .leading, spacing: 5) {
+                                
+                                Image(systemName: "magnifyingglass")
+                                    .foregroundColor(.orange)
+                                    .font(.system(size: 20))
+                                
+                                VStack {
+                                    Text("Encontrar")
+                                        .foregroundColor(.black)
+                                        .font(.system(size: 15, weight: .medium, design: .serif))
+                                        
+                                    
+                                    Text("Viagem")
+                                        .foregroundColor(.black)
+                                        .font(.system(size: 15, weight: .medium, design: .serif))
+                                }
+                                
+                            }
+                            .frame(width: 90, height: 85, alignment: .leading)
+                            
+                            .padding(.horizontal, 10)
+                            .background(.white)
+                        }
+                        .cornerRadius(15)
+                        
+                        NavigationLink {
+                            CheckinView()
+                        } label: {
+                            VStack(alignment: .leading, spacing: 5) {
+                                
+                                Image(systemName: "airplane.departure")
+                                    .foregroundColor(.orange)
+                                    .font(.system(size: 20))
+                                
+                                VStack {
+                                    Text("Fazer")
+                                        .foregroundColor(.black)
+                                        .font(.system(size: 15, weight: .medium, design: .serif))
+                                        
+                                    
+                                    Text("check-in")
+                                        .foregroundColor(.black)
+                                        .font(.system(size: 15, weight: .medium, design: .serif))
+                                }
+                                
+                            }
+                            .frame(width: 90, height: 85, alignment: .leading)
+                            
+                            .padding(.horizontal, 10)
+                            .background(.white)
+                        }
+                        .cornerRadius(15)
+
                         Card(image: "ticket.fill", text1: "Comprar", text2: "viagem")
                     }
                     

@@ -18,7 +18,7 @@ struct ListContactsComponent: View {
             Divider()
            
             
-            HStack(spacing: 15) {
+            HStack() {
                 VStack(alignment: .leading, spacing: 5) {
                     Text(TextTitle)
                         .foregroundColor(.black)
@@ -30,7 +30,7 @@ struct ListContactsComponent: View {
                         .font(.system(size: 18))
                         .fontWeight(.bold)
                 }
-                .frame(width: 200, height: 50)
+                .frame(width: 280, height: 50, alignment: .leading)
                 
                 Spacer()
                 
