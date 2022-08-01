@@ -1,6 +1,6 @@
 <h1 align="center">Gol Linhas Áreas - App</h1>
 
-## About <br /> <h4>Interface of a messaging app developed using Swift UI.</h4>
+## About <br /> <h4>Gol Linhas Áreas mobile application interface, developed using Swift & SwiftUI.</h4>
 
 
 ## Technologies
