@@ -53,6 +53,7 @@ struct HelpView: View {
                 
                 Spacer()
             }
+            .padding(.top, 45)
             .padding()
             .frame(width: .infinity, height: .infinity)
             

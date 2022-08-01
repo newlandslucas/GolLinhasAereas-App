@@ -146,7 +146,7 @@ struct HomeView: View {
                                     .font(.system(size: 20))
                                 
                                 VStack {
-                                    Text("Encontrar")
+                                    Text("Comprar")
                                         .foregroundColor(.black)
                                         .font(.system(size: 15, weight: .medium, design: .serif))
                                         
@@ -168,7 +168,33 @@ struct HomeView: View {
                     }
                     
                     HStack {
-                        Card(image: "airplane", text1: "Encontrar", text2: "viagem")
+                        NavigationLink {
+                                 MyTripsView()
+                             } label: {
+                                 VStack(alignment: .leading, spacing: 5) {
+                                     
+                                     Image(systemName: "airplane")
+                                         .foregroundColor(.orange)
+                                         .font(.system(size: 20))
+                                     
+                                     VStack {
+                                         Text("Encontrar")
+                                             .foregroundColor(.black)
+                                             .font(.system(size: 15, weight: .medium, design: .serif))
+                                             
+                                         
+                                         Text("viagem")
+                                             .foregroundColor(.black)
+                                             .font(.system(size: 15, weight: .medium, design: .serif))
+                                     }
+                                     
+                                 }
+                                 .frame(width: 90, height: 85, alignment: .leading)
+                                 
+                                 .padding(.horizontal, 10)
+                                 .background(.white)
+                             }
+                             .cornerRadius(15)
                         Card(image: "clock.fill", text1: "Status de", text2: "voo")
                         Card(image: "figure.walk", text1: "Voe Junto", text2: "")
                     }
