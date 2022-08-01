@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		943AEC3A2894393400BC5C84 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943AEC392894393400BC5C84 /* TabBarButton.swift */; };
 		9457D327288AE063008B07F1 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457D326288AE063008B07F1 /* HelpView.swift */; };
 		9457D329288AE87D008B07F1 /* ListContactsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457D328288AE87D008B07F1 /* ListContactsComponent.swift */; };
 		945FC345288ED915000A0C28 /* CheckinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FC344288ED915000A0C28 /* CheckinView.swift */; };
+		945FC347288EE8E9000A0C28 /* purchaseTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FC346288EE8E9000A0C28 /* purchaseTripView.swift */; };
 		94D6948728884C6F00093D0F /* GolLinhasAereasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6948628884C6F00093D0F /* GolLinhasAereasApp.swift */; };
 		94D6948928884C6F00093D0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6948828884C6F00093D0F /* ContentView.swift */; };
 		94D6948B28884C7100093D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D6948A28884C7100093D0F /* Assets.xcassets */; };
@@ -22,9 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		943AEC392894393400BC5C84 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		9457D326288AE063008B07F1 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		9457D328288AE87D008B07F1 /* ListContactsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContactsComponent.swift; sourceTree = "<group>"; };
 		945FC344288ED915000A0C28 /* CheckinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinView.swift; sourceTree = "<group>"; };
+		945FC346288EE8E9000A0C28 /* purchaseTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = purchaseTripView.swift; sourceTree = "<group>"; };
 		94D6948328884C6F00093D0F /* GolLinhasAereas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolLinhasAereas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D6948628884C6F00093D0F /* GolLinhasAereasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolLinhasAereasApp.swift; sourceTree = "<group>"; };
 		94D6948828884C6F00093D0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 			children = (
 				94D694992888816F00093D0F /* Card.swift */,
 				9457D328288AE87D008B07F1 /* ListContactsComponent.swift */,
+				943AEC392894393400BC5C84 /* TabBarButton.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 				9457D326288AE063008B07F1 /* HelpView.swift */,
 				94EC9716288AFE06002AB48F /* FindTripView.swift */,
 				945FC344288ED915000A0C28 /* CheckinView.swift */,
+				945FC346288EE8E9000A0C28 /* purchaseTripView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -182,11 +188,13 @@
 				94D6948928884C6F00093D0F /* ContentView.swift in Sources */,
 				94D6949A2888816F00093D0F /* Card.swift in Sources */,
 				9457D327288AE063008B07F1 /* HelpView.swift in Sources */,
+				943AEC3A2894393400BC5C84 /* TabBarButton.swift in Sources */,
 				9457D329288AE87D008B07F1 /* ListContactsComponent.swift in Sources */,
 				94D69497288880D900093D0F /* ModalView.swift in Sources */,
 				94EC9717288AFE06002AB48F /* FindTripView.swift in Sources */,
 				94D6949D2889BECF00093D0F /* ProfileView.swift in Sources */,
 				94D6948728884C6F00093D0F /* GolLinhasAereasApp.swift in Sources */,
+				945FC347288EE8E9000A0C28 /* purchaseTripView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -135,8 +135,36 @@ struct HomeView: View {
                             .background(.white)
                         }
                         .cornerRadius(15)
+                        
+                        NavigationLink {
+                            purchaseTripView()
+                        } label: {
+                            VStack(alignment: .leading, spacing: 5) {
+                                
+                                Image(systemName: "ticket.fill")
+                                    .foregroundColor(.orange)
+                                    .font(.system(size: 20))
+                                
+                                VStack {
+                                    Text("Encontrar")
+                                        .foregroundColor(.black)
+                                        .font(.system(size: 15, weight: .medium, design: .serif))
+                                        
+                                    
+                                    Text("viagem")
+                                        .foregroundColor(.black)
+                                        .font(.system(size: 15, weight: .medium, design: .serif))
+                                }
+                                
+                            }
+                            .frame(width: 90, height: 85, alignment: .leading)
+                            
+                            .padding(.horizontal, 10)
+                            .background(.white)
+                        }
+                        .cornerRadius(15)
 
-                        Card(image: "ticket.fill", text1: "Comprar", text2: "viagem")
+                       
                     }
                     
                     HStack {
