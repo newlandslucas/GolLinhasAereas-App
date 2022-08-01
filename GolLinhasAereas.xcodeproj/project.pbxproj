@@ -12,6 +12,8 @@
 		9457D329288AE87D008B07F1 /* ListContactsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457D328288AE87D008B07F1 /* ListContactsComponent.swift */; };
 		945FC345288ED915000A0C28 /* CheckinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FC344288ED915000A0C28 /* CheckinView.swift */; };
 		945FC347288EE8E9000A0C28 /* purchaseTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FC346288EE8E9000A0C28 /* purchaseTripView.swift */; };
+		94D55A8B289871A1006E0FFC /* MyTripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D55A8A289871A1006E0FFC /* MyTripsView.swift */; };
+		94D55A8E289872BE006E0FFC /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D55A8D289872BE006E0FFC /* TabBar.swift */; };
 		94D6948728884C6F00093D0F /* GolLinhasAereasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6948628884C6F00093D0F /* GolLinhasAereasApp.swift */; };
 		94D6948928884C6F00093D0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6948828884C6F00093D0F /* ContentView.swift */; };
 		94D6948B28884C7100093D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D6948A28884C7100093D0F /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 		9457D328288AE87D008B07F1 /* ListContactsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContactsComponent.swift; sourceTree = "<group>"; };
 		945FC344288ED915000A0C28 /* CheckinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinView.swift; sourceTree = "<group>"; };
 		945FC346288EE8E9000A0C28 /* purchaseTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = purchaseTripView.swift; sourceTree = "<group>"; };
+		94D55A8A289871A1006E0FFC /* MyTripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTripsView.swift; sourceTree = "<group>"; };
+		94D55A8D289872BE006E0FFC /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		94D6948328884C6F00093D0F /* GolLinhasAereas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolLinhasAereas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D6948628884C6F00093D0F /* GolLinhasAereasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolLinhasAereasApp.swift; sourceTree = "<group>"; };
 		94D6948828884C6F00093D0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +56,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94D55A8928987193006E0FFC /* MyTrips */ = {
+			isa = PBXGroup;
+			children = (
+				94D55A8C289872AD006E0FFC /* components */,
+				94D55A8A289871A1006E0FFC /* MyTripsView.swift */,
+			);
+			path = MyTrips;
+			sourceTree = "<group>";
+		};
+		94D55A8C289872AD006E0FFC /* components */ = {
+			isa = PBXGroup;
+			children = (
+				94D55A8D289872BE006E0FFC /* TabBar.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		94D6947A28884C6F00093D0F = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +124,7 @@
 		94D6949B2889BEBB00093D0F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				94D55A8928987193006E0FFC /* MyTrips */,
 				94D694942888625C00093D0F /* HomeView.swift */,
 				94D6949C2889BECF00093D0F /* ProfileView.swift */,
 				9457D326288AE063008B07F1 /* HelpView.swift */,
@@ -184,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				945FC345288ED915000A0C28 /* CheckinView.swift in Sources */,
+				94D55A8B289871A1006E0FFC /* MyTripsView.swift in Sources */,
 				94D694952888625C00093D0F /* HomeView.swift in Sources */,
 				94D6948928884C6F00093D0F /* ContentView.swift in Sources */,
 				94D6949A2888816F00093D0F /* Card.swift in Sources */,
@@ -195,6 +218,7 @@
 				94D6949D2889BECF00093D0F /* ProfileView.swift in Sources */,
 				94D6948728884C6F00093D0F /* GolLinhasAereasApp.swift in Sources */,
 				945FC347288EE8E9000A0C28 /* purchaseTripView.swift in Sources */,
+				94D55A8E289872BE006E0FFC /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
