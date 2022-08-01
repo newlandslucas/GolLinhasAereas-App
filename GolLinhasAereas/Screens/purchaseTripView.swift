@@ -123,16 +123,108 @@ struct goingView: View {
 
 struct stretchView: View {
   
+    @State var destineCode: String = ""
+    @State var titleTextField: String = ""
+    @State var dateTextField: String = ""
+    @State var originTextField: String = ""
+    
     var body: some View {
-        Text("trecho")
-            .foregroundColor(.orange)
+        
+        
+        VStack(alignment: .leading) {
+            Text("Cliente")
+                .foregroundColor(.gray)
+                .font(.system(size: 14))
+                .padding()
+            
+            VStack(spacing: 15) {
+                TextField("1 Adulto", text: $titleTextField)
+                    .foregroundColor(.black)
+                    .font(.system(size: 24))
+                Divider()
+                TextField("Origem", text: $originTextField)
+                    .foregroundColor(.black)
+                    .font(.system(size: 24))
+                Divider()
+                TextField("Destino", text: $destineCode)
+                    .foregroundColor(.black)
+                    .font(.system(size: 24))
+                    
+                Divider()
+                
+                TextField("Datas", text: $dateTextField)
+                    .foregroundColor(.black)
+                    .font(.system(size: 24))
+                    
+                Divider()
+                
+                
+                
+                Spacer()
+
+                
+            }
+            .padding()
+        }
+        Spacer()
+          
     }
 }
 
 struct otherView: View {
   
+    @State var destineCode: String = ""
+    @State var titleTextField: String = ""
+    @State var dateTextField: String = ""
+    @State var originTextField: String = ""
+    
     var body: some View {
-        Text("vários trechos")
+        
+        
+        VStack(alignment: .leading) {
+            Text("Cliente")
+                .foregroundColor(.gray)
+                .font(.system(size: 14))
+                .padding()
+            
+            VStack(alignment: .leading, spacing: 15) {
+                VStack() {
+                    TextField("1 Adulto", text: $titleTextField)
+                        .foregroundColor(.black)
+                    .font(.system(size: 24))
+                    Divider()
+
+                }
+               
+                                
+                Text("Trecho 1")
+                    .foregroundColor(.black)
+                    .fontWeight(.bold)
+                    .frame(height: 50)
+               
+                
+                TextField("Origem", text: $originTextField)
+                    .foregroundColor(.black)
+                    .font(.system(size: 24))
+                Divider()
+                TextField("Destino", text: $destineCode)
+                    .foregroundColor(.black)
+                    .font(.system(size: 24))
+                    
+                Divider()
+                
+                TextField("Datas", text: $dateTextField)
+                    .foregroundColor(.black)
+                    .font(.system(size: 24))
+                    
+                Divider()
+
+                
+            }
+            .padding()
+        }
+        Spacer()
+          
     }
     
 }
