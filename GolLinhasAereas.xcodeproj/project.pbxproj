@@ -14,6 +14,7 @@
 		945FC347288EE8E9000A0C28 /* purchaseTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945FC346288EE8E9000A0C28 /* purchaseTripView.swift */; };
 		94D55A8B289871A1006E0FFC /* MyTripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D55A8A289871A1006E0FFC /* MyTripsView.swift */; };
 		94D55A8E289872BE006E0FFC /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D55A8D289872BE006E0FFC /* TabBar.swift */; };
+		94D55A9028989051006E0FFC /* p1.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D55A8F28989051006E0FFC /* p1.png */; };
 		94D6948728884C6F00093D0F /* GolLinhasAereasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6948628884C6F00093D0F /* GolLinhasAereasApp.swift */; };
 		94D6948928884C6F00093D0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6948828884C6F00093D0F /* ContentView.swift */; };
 		94D6948B28884C7100093D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D6948A28884C7100093D0F /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		945FC346288EE8E9000A0C28 /* purchaseTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = purchaseTripView.swift; sourceTree = "<group>"; };
 		94D55A8A289871A1006E0FFC /* MyTripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTripsView.swift; sourceTree = "<group>"; };
 		94D55A8D289872BE006E0FFC /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		94D55A8F28989051006E0FFC /* p1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p1.png; sourceTree = "<group>"; };
 		94D6948328884C6F00093D0F /* GolLinhasAereas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolLinhasAereas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D6948628884C6F00093D0F /* GolLinhasAereasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolLinhasAereasApp.swift; sourceTree = "<group>"; };
 		94D6948828884C6F00093D0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		94D6948528884C6F00093D0F /* GolLinhasAereas */ = {
 			isa = PBXGroup;
 			children = (
+				94D55A8F28989051006E0FFC /* p1.png */,
 				94D6949B2889BEBB00093D0F /* Screens */,
 				94D694982888816800093D0F /* components */,
 				94D6948628884C6F00093D0F /* GolLinhasAereasApp.swift */,
@@ -194,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94D6948E28884C7100093D0F /* Preview Assets.xcassets in Resources */,
+				94D55A9028989051006E0FFC /* p1.png in Resources */,
 				94D6948B28884C7100093D0F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
